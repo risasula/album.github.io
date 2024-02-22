@@ -7,10 +7,13 @@
     <link rel="stylesheet" href="video.css">
 </head>
 <body>
+    <h2 class="h23">GALERY MEMORY TKJ 2</h2>
     <div class="menu2">
         <div class="menu">
             <div class="submenu">
-                <i class="fas fa-bars"></i>
+                <i class="fas fa-bars">
+                    <div class="ori"></div>
+                </i>
                 <ul class="dropdaw">
                     <li class="submenu"><a href="index.html" id="submenu-23">Foto</a></li>
                     <li class="submenu"><a href="video.html" id="submenu-233">Video</a></li>
@@ -19,5 +22,65 @@
             <h2>GALERY MEMORY TKJ 2</h2>
         </div>
     </div>
+    <div id="container">
+        <div class="container-img">
+            <div class="image"><video src="./poto/vid-mir2.mp4" class="lolo-mir"></video></div>
+            <div class="image"><video src="./poto/vid3.mp4" class="lolo-mir"></video></div>
+            <div class="image"><video src="./poto/vid5.mp4" class="lolo-mir"></video></div>
+            <div class="image"><video src="./poto/vid6.mp4" class="lolo-mir"></video></div>
+            <div class="image"><video src="./poto/vid-mir1.mp4" class="lolo-mir"></video></div>
+            <div class="image"><video src="./poto/VID-20240123-WA0006.mp4" class="lolo"></video></div>
+            <div class="image"><video src="./poto/VID-20240110-WA0001.mp4" class="lolo"></video></div>
+            <div class="image"><video src="./poto/VID-20240110-WA0016.mp4" class="lolo-mir"></video></div>
+            <div class="image"><video src="./poto/VID-20240110-WA0017.mp4" class="lolo-mir"></video></div>
+            <div class="image"><video src="./poto/VID-20240123-WA0001.mp4" class="lolo-mir"></video></div>
+            <div class="image"><video src="./poto/VID-20240123-WA0003.mp4" class="lolo-mir"></video></div>
+            <div class="image"><video src="./poto/VID-20240123-WA0005.mp4" class="lolo-mir"></video></div>
+            <div class="image"><video src="./poto/VID-20240207-WA0006.mp4" class="lolo-mir"></video></div>
+            <div class="image"><video src="./poto/VID-20240219-WA0008.mp4" class="lolo-mir"></video></div>
+            <div class="image"><video src="./poto/VID-20240220-WA0001.mp4" class="lolo-mir"></video></div>
+            <div class="image"><video src="./poto/VID-20240220-WA0061.mp4" class="lolo-mir"></video></div>
+        </div>
+    </div>
+    
+    
+    <!-- miring -->
+    <div class="pop-img">
+        <span>&times;</span>
+        <video controls src="./poto/VID-20240123-WA0006.mp4"></video>
+    </div>
+    <!-- bukan miring -->
+    <div class="pop-img-mir">
+        <span>&times;</span>
+        <video controls src="./poto/VID-20240110-WA0001.mp4"></video>
+    </div>
+    <script>
+        // poto
+        document.querySelectorAll(".lolo").forEach(Image => {
+            Image.onclick = () => {
+                document.querySelector(".pop-img").style.display = 'block';
+                document.querySelector(".menu2").style.display = 'none';
+                document.querySelector(".pop-img video").src = Image.getAttribute("src");
+            }
+        })
+
+        document.querySelector(".pop-img span").onclick = () => {
+            document.querySelector(".pop-img").style.display = 'none';
+            document.querySelector(".menu2").style.display = 'block';
+        }
+        // poto tidak miring
+        document.querySelectorAll(".lolo-mir").forEach(Image => {
+            Image.onclick = () => {
+                document.querySelector(".pop-img-mir").style.display = 'block';
+                document.querySelector(".menu2").style.display = 'none';
+                document.querySelector(".pop-img-mir video").src = Image.getAttribute("src");
+            }
+        })
+
+        document.querySelector(".pop-img-mir span").onclick = () => {
+            document.querySelector(".pop-img-mir").style.display = 'none';
+            document.querySelector(".menu2").style.display = 'block';
+        }
+    </script>
 </body>
 </html>
