@@ -26,6 +26,14 @@ i {
     top: 15px;
     left: 10px;
 }
+.ori {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    z-index: 999;
+}
 .dropdaw {
     display: none;
     position: absolute;
