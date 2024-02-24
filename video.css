@@ -189,11 +189,11 @@ span {
 }
 
 @media (max-width:768px) {
-    .pop-img img {
+    .pop-img video {
     width: 95%;
     }
 
-    .pop-img-mir img {
+    .pop-img-mir video {
         width: 95%;
         }
 }
@@ -202,10 +202,10 @@ span {
         height: 120px;
     width: 50%;
     }
-    .pop-img img {
+    .pop-img video {
         width: 95%;
     }
-    .pop-img-mir img {
+    .pop-img-mir video {
         width: 95%;
     }
 }

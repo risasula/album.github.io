@@ -197,7 +197,10 @@ span {
 
     .pop-img-mir img {
         width: 95%;
-        }
+    }
+    img {
+        object-fit: cover;
+    }
 }
 @media (max-width:521px) {
     .image {
@@ -209,6 +212,9 @@ span {
     }
     .pop-img-mir img {
         width: 95%;
+    }
+    img {
+        object-fit: cover;
     }
 }
 
