@@ -152,6 +152,7 @@
             <img src="./poto/IMG-20220903-WA00012.jpg">
         </div>
         <script>
+            let lolo = document.getElementsByClassName(".lolo");
             // poto
             document.querySelectorAll(".lolo").forEach(Image => {
                 Image.onclick = () => {
@@ -166,6 +167,7 @@
                 document.querySelector(".menu2").style.display = 'block';
             }
             // poto tidak miring
+            // let lolomir = document.getElementsByClassName(".lolo-mir");
             document.querySelectorAll(".lolo-mir").forEach(Image => {
                 Image.onclick = () => {
                     document.querySelector(".pop-img-mir").style.display = 'block';
